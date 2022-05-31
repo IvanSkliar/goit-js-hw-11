@@ -7,7 +7,7 @@
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background:#718ef5;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-blue-cartoon-hand-drawn-programmers-day-illustration-background-picture-image_929476.jpg);
     color: #212121;
     line-height: 1.5;
     text-align: center;
@@ -84,12 +84,12 @@
    border: none;
    font-size: 16px;
    cursor: pointer;
-   transition: all 300ms linear;
-   background: linear-gradient(#f70000, #8b8b8b);
+   transform: translateX(-50%);
+   transition: background-color 300ms linear, color 300ms linear;
+   background-color: #07bb07;
   }
   button[type="submit"]:hover,
-  button[type="submit"]:focus{
-    background: linear-gradient(#31b1b6, #bb21bb);
+  button[type="submit"]:focus{background-color: rgb(139, 10, 190);
   }
   .gallery{
     display:flex;
@@ -98,6 +98,7 @@
     justify-content: center;
     margin-top: 80px;
   }
+
   a{
     text-decoration: none;
     color: inherit;
@@ -146,3 +147,26 @@
     align-items: center;
     margin: 0;
   }
+  .load-more {
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 300ms linear, color 300ms linear;
+    background-color: #07bb07 ;
+  }
+    .load-more:hover,
+    .load-more:focus {
+      background-color: rgb(139, 10, 190);
+      color: rgb(0, 0, 0);
+    }
+    .load-more.is-hidden {
+      display: none;
+    }
